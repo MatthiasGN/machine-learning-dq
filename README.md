@@ -51,6 +51,7 @@ A generally good choice for number of neighbours is `k = n^(1/2)`. Aim to set it
 - Algorithm gets significantly slower as the size of the dataset increases
 
 ### Code Tips
+- DataFrames can be iterated over with `for index, row in X_test.iterrows():` Note index first, row second.
 - Calculating accuracy:\
 `accuracy = (X_test["predicted_y"] == y_test).value_counts(normalize=True)[0]*100`
 - Euclidean distance between two observations with multiple features:
